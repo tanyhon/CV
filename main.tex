@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.2, 1 February 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[hidelinks]{hyperref}
+
+\pagenumbering{arabic}
+
+
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{173e97}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={black!50!black},
+    citecolor={black!50!black},
+    urlcolor={black!80!black}
+}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+\begin{document}
+\name{Anthony Raffray}
+\tagline{Gestionnaire de projets}
+% \photo{2.5cm}{ProfilePicture}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{
+  	\href{mailto:anthonyraffray@gmail.com}{anthonyraffray@gmail.com}
+  }
+  \phone{
+  	\href{tel:+15144514480}{(514) 451-4480}
+   }
+  \mailaddress{6342, Christophe Colomb}
+  \location{Montréal, QC, H2S 2G7}
+ % \twitter{@Anthonyyy}
+  \linkedin{
+  	\href{https://www.linkedin.com/in/anthonyraffray}{www.linkedin.com/in/anthonyraffray}
+  }
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+\begin{adjustwidth}{}{-8cm}
+
+\end{adjustwidth}
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Expérience}
+
+\cvevent{Gestionnaire de projets}{Dialog Insight}{Août 2015 -- Septembre 2016}{\scriptsize 445 rue Saint-Pierre, Suite 401, Montréal, QC}
+\begin{itemize}
+\item Documenter le projet (tâches, temps, budget, responsabilités)
+\item Communiquer entre l’entreprise et le client
+\item Validerr la conformité du projet avant livraison
+\item Respecter les délais et coûts de production préalablement établis
+\item Répondre aux demandes d’information des clients
+\item Assurer la gestion des clients non assignés
+\item Supporter l’équipe et les clients sur l’utilisation de la plateforme
+\item Facturer les travaux terminés
+\item Renouveler les services requis pour les clients
+\end{itemize}
+
+\divider
+
+\cvevent{Développeur web}{Solutions media 360}{Avril 2014 -- Juillet 2015}{\scriptsize 355 rue Peel, Bureau 901, Montréal, QC}
+% Plus d'information sur le poste en \hypertarget{page2}{page 2}.
+\begin{itemize}
+\item Programmer la couche visuelle des nouveaux sites web et mobiles
+\item Corriger, améliorer et maintenir à jour les sites web existants
+\item Perfectionner le framework web de l’entreprise
+\item S’impliquer dans le design ergonomique des sites et applications
+\item Collaborer étroitement avec les designers, chargés de projets et développeurs back-end
+\end{itemize}
+
+\divider
+
+\cvevent{Analyste développeur}{Intellico}{Septembre 2012 -- Janvier 2014}{\scriptsize 2190 rue Lyne, Brossard, QC}
+\begin{itemize}
+\item Soutenir l’équipe de 3 développeurs
+\item Former et entrainer l’équipe sur les technologies utilisées
+\item Analyser les processus d’information et élaborer des solutions adaptées aux besoins clients
+\item Intégrer les solutions portails clients et assurer le suivi des projets. Analyse des demandes de changements
+\end{itemize}
+\divider
+\cvevent{Développeur web}{Répartition des postes occupés sur 5 ans}{Janvier 2008 -- Septembre 2012}{Montreal, QC}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+
+\wheelchart{1cm}{0.4cm}{
+  29.75/13em/accent!60/\small 2010 - Tink \\ Développeur web,
+  16.55/9em/accent!75/\small 2012 - Dejardins \\ \small Lead développeur,
+  37.15/12em/accent!10/\small 2008 -  Alphamosaik \\ \small Intégrateur  Sharepoint,
+  16.55/12em/accent!30/\small 2009 - Techtra \\ \small Intégrateur Sharepoint
+}
+
+\tiny \hypertarget{page2}{Plus d'information sur les postes en page 2}
+
+
+\clearpage
+\cvsection{Expérience}
+\cvevent{\hyperlink{page2}{Développeur web}}{Tink}{Juillet 2010 -- Septembre 2012}{\scriptsize 87 rue Prince, Suite 140, Montréal, QC}
+
+\begin{itemize}
+\item Travailler dans un environnement multi-projets
+\item Concevoir, développer, intégrer les sites web clients de l’entreprise
+\item Travailler avec des échéanciers courts et respecter les livrables (temps, qualité, budget)
+
+\end{itemize}
+
+\cvevent{}{Mandat significatif chez Tink}{Décembre 2011 -- Septembre 2012}{\scriptsize Groupe Desjardins}
+\begin{large}
+Lead développeur
+\end{large}
+\begin{itemize}
+\item Responsabilité d’une équipe de 5 personnes
+\item Organisation des tâches
+\item Distribution des livrables
+\item Contrôle de la qualité des livrables et rétroaction auprès du chargé de projets
+\end{itemize}
+
+\divider
+
+\cvevent{Intégrateur Sharepoint}{Techtra}{Janvier 2009 -- Juillet 2010}{\scriptsize 2001 blvd. Rome, Brossard, QC}
+\begin{itemize}
+\item Amélioration des interfaces SharePoint (UX et design)
+\item Administration, configuration et maintenance de sites SharePoint
+\end{itemize}
+
+\divider
+
+\cvevent{Intégrateur Sharepoint}{Alphamosaik}{Janvier 2008 -- Octobre 2008}{\scriptsize 4000 rue Saint Ambroise, Montréal, QC}
+\begin{itemize}
+\item Amélioration des interfaces SharePoint (UX et design)
+\item Administration, configuration et maintenance de sites SharePoint
+\end{itemize}
+
+\divider
+
+\cvevent{Vendeur informatique}{Internity}{Avril 2007 -- Décembre 2007}{\scriptsize Quimper, France}
+\begin{itemize}
+\item Vente, assemblage, réparation de matériel informatique
+\end{itemize}
+
+\divider
+
+\cvevent{Entrepreneur}{Linepub}{Septembre 2004 -- Mai 2005}{\scriptsize Nantes, France}
+\begin{itemize}
+\item Création et réalisation de site web
+\item Architecture de site
+\item Ergonomie et design d'interface
+\item Développement PHP
+\end{itemize}
+
+\divider
+
+\cvevent{Développeur d'application intranet et internet}{France Télécom}{Octobre 2002 -- Juin 2004}{\scriptsize Rennes, France}
+Contrat de Qualification professionelle
+\begin{itemize}
+\item Maintenance de la plateforme Rennes Mabilais
+\item Mise à jour du site internet régional
+\item Réalisation de sites intranet pour les agences de ventes
+\end{itemize}
+\clearpage
+
+\end{document}
